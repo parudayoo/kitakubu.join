@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #050505 0%,
+    #0b0b0b 40%,
+    #111827 100%
+  );
+  color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* 雨 */
+#rain {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* 中央 */
+.center {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  transition: transform 0.15s ease-out;
+}
+
+/* タイトル */
+.title {
+  font-size: 42px;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* 画像 */
+.main-image {
+  width: 180px;
+  opacity: 0.85;
+  margin-bottom: 35px;
+  transition: transform 0.15s ease-out;
+  filter: drop-shadow(0 0 20px rgba(255,255,255,0.08));
+}
+
+/* メインボタン */
+.main-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 36px;
+  font-size: 16px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.25);
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* サブボタン */
+.sub-btn {
+  margin-top: 18px;
+  padding: 10px 30px;
+  font-size: 13px;
+  background: transparent;
+  color: #aaa;
+  border: 1px solid rgba(255,255,255,0.15);
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.sub-btn:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.4);
+}
+
+/* 表示テキスト */
+#reason-text {
+  margin-top: 20px;
+  opacity: 0;
+  letter-spacing: 4px;
+  transition: opacity 0.6s;
+}
+
+#reason-text.show {
+  opacity: 0.7;
+}
+
+/* reasonページ文章 */
+.reason-desc {
+  margin-top: 30px;
+  line-height: 2;
+  opacity: 0.7;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>帰宅部で見つかる未来</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 雨 -->
+  <canvas id="rain"></canvas>
+
+  <!-- 中央コンテンツ -->
+  <div class="center">
+    <h1 class="title">帰宅部で見つかる未来</h1>
+
+    <img
+      src="https://cdn.discordapp.com/attachments/1381903206921273377/1455823682508292169/image.png?ex=695620f5&is=6954cf75&hm=5bf9a8ff33d6a40b08ef4b8b8ac0839f6ea45e90c5482305f479b2faf006cbb8&"
+      class="main-image"
+      alt="image"
+    >
+
+    <!-- 今すぐ参加 -->
+    <button class="main-btn" onclick="goJoin()">
+      今すぐ参加
+    </button>
+
+    <!-- 主な活動理由 -->
+    <button class="sub-btn" onclick="showReason()">
+      主な活動
+    </button>
+
+    <!-- 表示されるテキスト -->
+    <p id="reason-text">帰宅</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
